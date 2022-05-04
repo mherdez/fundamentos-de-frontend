@@ -1,4 +1,6 @@
 module.exports = {
+	dest: 'docs',
+	base: '/fundamentos-de-frontend/',
 	title: 'Fundamentos de Frontend',
 	description:
 		'Curso intersemestral de Fundamentos de Frontend.',
@@ -21,8 +23,6 @@ module.exports = {
 		],
 	],
 
-	dest: 'docs',
-	base: '/fundamentos-de-frontend',
 	themeConfig: {
 		editLinks: false,
 		editLinkText: '',
