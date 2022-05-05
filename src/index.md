@@ -1,3 +1,1 @@
-# Introducción
-
-Inicio del curso de fundamentos de frontend
+# 01. Introducción

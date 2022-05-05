@@ -1,7 +1,7 @@
 module.exports = {
 	dest: 'docs',
-	base: '/fundamentos-de-frontend/', // VISUALIZACIÓN EN GITHUB
-	// base: '/',  // VISUALIZACIÓN LOCAL
+	// base: '/fundamentos-de-frontend/', // VISUALIZACIÓN EN GITHUB
+	base: '/', // VISUALIZACIÓN LOCAL
 	title: 'Fundamentos de Frontend',
 	description:
 		'Curso intersemestral de Fundamentos de Frontend.',
@@ -45,8 +45,25 @@ module.exports = {
 				text: 'Javascript',
 				link: 'https://developer.mozilla.org/es/docs/Web/JavaScript',
 			},
+			{
+				text: 'Vuepress',
+				link: 'https://vuepress.vuejs.org/',
+			},
+			{
+				text: 'Markdown',
+				link: 'https://markdown.es/',
+			},
 		],
-		sidebar: ['/', '/01-fundamentos/'],
+		sidebar: [
+			'/',
+			'/01-fundamentos/',
+			'/02-instalacion/',
+			'/03-html/',
+			'/04-css/',
+			'/05-javascript/',
+			'/06-ejercicio/',
+			'/07-jest/',
+		],
 	},
 
 	plugins: [

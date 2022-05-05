@@ -1,0 +1,27 @@
+# 04. Html
+
+- Fundamentos
+  - Estructura HTML
+  - DOM
+  - Etiquetas
+  - Atributos
+  - Semántica
+  - Rutas
+    - Absolutas
+    - Relativas
+- Etiquetas básicas
+  - Encabezados
+  - Parrafos
+  - Imágenes
+  - Listas
+    - Ordenadas
+    - No ordenadas
+  - Tablas
+  - Formularios
+- Web semántico
+  - Div
+  - Header
+  - Main
+  - Footer
+  - ASlide
+  - Nav

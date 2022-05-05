@@ -1,0 +1,48 @@
+## 06. Javascript
+
+- Introducción
+- Elementos básicos
+  - Tipo de datos
+  - Variables
+  - Operadores
+  - Manejo de la consola
+- Estructura de control
+  - If/else/if else
+  - While
+  - For
+- Funciones
+- Objeto
+- Arreglos
+  - Concepto
+  - Métodos iterables
+    - For in
+    - For of
+    - ForEach
+- Javascript moderno
+  - Programación funcional
+    - Map
+    - Filter
+    - Find
+    - Some
+    - Slice
+    - Reduce
+    - Concat
+    - Split
+    - Join
+    - Includes
+    - Reduce
+    - Flat
+    - Fill
+  - Operador ternario
+  - Asignadores lógicos
+- Javascript DOM
+  - Document
+  - GetElementBy
+  - QuerySelector / QuerySelectorAll
+  - Eventos
+    - AddEventListener
+    - Click
+    - Mouse
+    - preventDefault
+  - CreateElement
+  - AppendChild
