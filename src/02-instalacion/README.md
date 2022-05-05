@@ -2,7 +2,11 @@
 
 ## Editor
 
-- Extensiones
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - Extensiones
+  - Snippets
+- [Atom](https://atom.io/)
+- [SublimeText](https://www.sublimetext.com/)
 
 ## Navegador / Cliente web
 
