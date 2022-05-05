@@ -18,7 +18,7 @@
 - Principales comandos
   - Add
   - Commit
-  - Checkout
+  - Push
   - Status
   - Log
 
