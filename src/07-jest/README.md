@@ -1,4 +1,4 @@
-## 08. Jest
+## Jest
 
 Pruebas unitarias
 

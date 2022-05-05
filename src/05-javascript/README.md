@@ -1,4 +1,4 @@
-## 06. Javascript
+## Javascript
 
 - Introducción
 - Elementos básicos

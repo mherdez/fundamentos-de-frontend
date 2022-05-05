@@ -61,8 +61,10 @@ module.exports = {
 			'/03-html/',
 			'/04-css/',
 			'/05-javascript/',
-			'/06-ejercicio/',
 			'/07-jest/',
+			'/03a-ejercicios-html/',
+			'/04a-ejercicios-css/',
+			'/06-desafios/',
 		],
 	},
 

@@ -1,4 +1,4 @@
-# 02. Fundamentos
+# Fundamentos
 
 ## Web
 

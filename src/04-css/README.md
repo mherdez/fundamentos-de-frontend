@@ -1,4 +1,4 @@
-## 05. Css
+## Css
 
 - Fundamentos
   - Reglas de CSS

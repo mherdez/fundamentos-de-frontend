@@ -1,4 +1,4 @@
-# 03. Ambiente de desarrollo
+# Ambiente de desarrollo
 
 ## Editor
 
