@@ -1,19 +1,11 @@
 # 02. Fundamentos
 
-## Fundamentos
+## Web
 
-- Web
-- Modelo cliente-servidor
-- URL
-- Servidores web
-- Concepto de Frontend
+## Modelo cliente-servidor
 
-## Imágenes
+## URL
 
-#### Imágen desde Picsum Photos
+## Servidores web
 
-![mi imagen desde lorem](https://picsum.photos/500/300)
-
-#### Imágen local
-
-<img :src="$withBase('/img/imagen-local.jpg')">
+## Concepto de Frontend

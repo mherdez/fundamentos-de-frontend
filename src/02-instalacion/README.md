@@ -6,29 +6,30 @@
 
 ## Navegador / Cliente web
 
+- Chrome
+  - Herramientas del desarrollo
+    - Elementos
+    - Consola
+    - Aplicación
+
 ## Git/Github
 
 - Respositorio
-- Pages
+- Principales comandos
+  - Add
+  - Commit
+  - Checkout
+  - Status
+  - Log
 
 ## Servidores gratuitos de prueba
 
+- [Netlify](https://app.netlify.com/)
+- [Github Page](https://pages.github.com/)
+- [Glitch](https://glitch.com/)
+- [Vercel](https://vercel.com/)
+
 ## Gestor de paquetes
-
-:::tip Nota
-Un sistema de gestión de paquetes, también conocido como gestor de paquetes, es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software.
-:::
-
-> hola
-
-`hola`
-
-```
-Hola
-```
-
-| `NOTE` | This is something I want you to notice. It has a lot of text, and I want that text to wrap within a cell to the right of the `NOTE`, instead of under it. |
-| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 - NPM
   - Node

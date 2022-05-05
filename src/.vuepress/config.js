@@ -45,10 +45,10 @@ module.exports = {
 				text: 'Javascript',
 				link: 'https://developer.mozilla.org/es/docs/Web/JavaScript',
 			},
-			{
-				text: 'Vuepress',
-				link: 'https://vuepress.vuejs.org/',
-			},
+			// {
+			// 	text: 'Vuepress',
+			// 	link: 'https://vuepress.vuejs.org/',
+			// },
 			{
 				text: 'Markdown',
 				link: 'https://markdown.es/',
