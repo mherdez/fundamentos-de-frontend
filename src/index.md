@@ -1,6 +1,7 @@
-# 01. Introducción
+# Introducción
 
-<!-- ## Imágenes
+<!--
+## Imágenes
 
 #### Imágen desde Picsum Photos
 
@@ -8,9 +9,15 @@
 
 #### Imágen local
 
-<img :src="$withBase('/img/imagen-local.jpg')"> -->
-<!--
+<img :src="$withBase('/img/imagen-local.jpg')">
+
 :::tip Nota
+Un sistema de gestión de paquetes, también conocido como gestor de paquetes, es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software.
+:::
+:::warning Nota
+Un sistema de gestión de paquetes, también conocido como gestor de paquetes, es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software.
+:::
+:::danger Nota
 Un sistema de gestión de paquetes, también conocido como gestor de paquetes, es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software.
 :::
 
@@ -23,8 +30,8 @@ Hola
 ```
 
 | `NOTE` | This is something I want you to notice. It has a lot of text, and I want that text to wrap within a cell to the right of the `NOTE`, instead of under it. |
-| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -->
-<!--
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
 | Primera columna | Segunda columna | Tercera columna |
 | --------------- | --------------- | --------------- |
 | Contenido 1-1   | Contenido 1-2   | Contenido 1-3   |
