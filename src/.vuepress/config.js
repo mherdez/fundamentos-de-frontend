@@ -1,6 +1,6 @@
 module.exports = {
 	dest: 'docs',
-	base: '/fundamentos-de-frontend/', // VISUALIZACIÓN EN GITHUB
+	base: '/guia-fundamentos-de-frontend/', // VISUALIZACIÓN EN GITHUB
 	// base: '/', // VISUALIZACIÓN LOCAL
 	title: 'Fundamentos de Frontend',
 	description:
