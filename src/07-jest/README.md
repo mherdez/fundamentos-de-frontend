@@ -4,8 +4,6 @@
 
 Jest es un marco de prueba de JavaScript mantenido por Meta, diseñado y construido por Christoph Nakazawa con un enfoque en la simplicidad y el soporte para grandes aplicaciones web. Funciona con proyectos que utilizan Babel, TypeScript, Node.js, React, Angular, Vue.js y Svelte.
 
-[Jest](https://jestjs.io/es-ES/docs/28.0/getting-started)
-
 ## Instalación
 
 Instala Jest utilizando tu gestor de paquetes favorito:
