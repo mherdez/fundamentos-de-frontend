@@ -6,8 +6,7 @@ Está estructurado de forma tal que se pueda llevar el seguimiento paso a paso y
 
 De igual forma, constituye una guía que complementa el curso virtual donde se verá a profundidad cada tema con prácticas y casos de usos, aportando el conocimiento que se requiere en el mundo del frontend.
 
-<div style="width: 15%; margin: 40px auto; display: flex; justify-content: center; gap: 10px">
-  <!-- <img src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png" /> -->
+<div style="width: 20%; margin: 40px auto; display: flex; justify-content: center; gap: 10px">
   <img src='https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg'>
   <img src='https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg'>
   <img src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'>
