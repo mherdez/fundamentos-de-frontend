@@ -399,7 +399,7 @@ module.exports = fizzbuzz;
 node fizzbuzz 100
 ```
 
-Resultado
+##### Resultado
 
 ```
 0: 0
