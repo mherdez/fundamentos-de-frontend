@@ -207,9 +207,9 @@ Escribir un programa que muestre en pantalla los números del 1 al 100, sustituy
 - Los múltiplos de 5 por **`buzz`**, y
 - Los múltiplos de ambos, es decir, los múltiplos de 3 y 5 (o de 15), por la palabra **`fizzbuzz`**.
 
-#### fizzbuzz.test.js
+### fizzbuzz.test.js
 
-##### Estructura básica
+#### Estructura básica
 
 ```js
 const fizzbuzz = require('./fizzbuzz.js');
@@ -221,7 +221,7 @@ describe('Pruebas en fizzbuzz.js', () => {
 }
 ```
 
-##### Primer Test
+#### Primer Test
 
 ```js
 test('se espera que número sea igual a numero', () => {
@@ -233,7 +233,7 @@ test('se espera que número sea igual a numero', () => {
 });
 ```
 
-##### Segundo Test
+#### Segundo Test
 
 ```js
 test('se espera que 3 sea igual a fizz', () => {
@@ -245,7 +245,7 @@ test('se espera que 3 sea igual a fizz', () => {
 });
 ```
 
-##### Tercer Test
+#### Tercer Test
 
 ```js
 test('se espera que los múltiplos de 3 sea igual a fizz', () => {
@@ -257,7 +257,7 @@ test('se espera que los múltiplos de 3 sea igual a fizz', () => {
 });
 ```
 
-##### Cuarto Test
+#### Cuarto Test
 
 ```js
 test('se espera que 5 sea igual a buzz', () => {
@@ -269,7 +269,7 @@ test('se espera que 5 sea igual a buzz', () => {
 });
 ```
 
-##### Quinto Test
+#### Quinto Test
 
 ```js
 test('se espera que los múltiplos de 5 sea igual a buzz', () => {
@@ -281,7 +281,7 @@ test('se espera que los múltiplos de 5 sea igual a buzz', () => {
 });
 ```
 
-##### Sexto Test
+#### Sexto Test
 
 ```js
 test('se espera que los múltiplos de 3 y 5 sea igual a fizzbuzz', () => {
@@ -293,9 +293,9 @@ test('se espera que los múltiplos de 3 y 5 sea igual a fizzbuzz', () => {
 });
 ```
 
-#### fizzbuzz.js
+### fizzbuzz.js
 
-##### Versión 1.0. Resolviendo los tests
+#### Versión 1.0. Resolviendo los tests
 
 ```js
 const fizzbuzz = (num) => {
@@ -311,13 +311,13 @@ const fizzbuzz = (num) => {
 module.exports = fizzbuzz;
 ```
 
-##### Ejecutando los test
+#### Ejecutando los test
 
 ```
 npm test
 ```
 
-##### Resultado de los test
+#### Resultado de los test
 
 ```
 > jest-fizzbuzz@1.0.0 test
@@ -339,7 +339,7 @@ Time:        0.382 s, estimated 1 s
 Ran all test suites.
 ```
 
-##### Versión 2.0. Reduciendo código
+#### Versión 2.0. Reduciendo código
 
 ```js
 const fizzbuzz = (num) => {
@@ -353,7 +353,7 @@ const fizzbuzz = (num) => {
 module.exports = fizzbuzz;
 ```
 
-##### Versión 3.0. Optimización funcional
+#### Versión 3.0. Optimización funcional
 
 ```js
 const fizzbuzz = (num) => {
@@ -368,7 +368,7 @@ const fizzbuzz = (num) => {
 module.exports = fizzbuzz;
 ```
 
-##### fizzbuzz.js (final)
+### fizzbuzz.js (final)
 
 ```js
 const fizzbuzz = (num) => {
@@ -393,13 +393,13 @@ lista(args[0]);
 module.exports = fizzbuzz;
 ```
 
-##### Ejecutando en línea de comando
+#### Ejecutando en línea de comando
 
 ```
 node fizzbuzz 100
 ```
 
-##### Resultado
+#### Salida de la consola
 
 ```
 0: 0
