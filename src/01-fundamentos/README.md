@@ -6,7 +6,7 @@ En informática, la **World Wide Web** (La Web) o red informática mundial​ es
 
 Sus características son: es un sistema a través del cual se gestiona información que será compartida por internet; es necesario tener conexión a internet a través de alguna aplicación para poder utilizar la web, por ejemplo, Chrome, Mozilla, Safari y otros navegadores web, que son herramientas de internet que nos permiten acceder a un gran número de contenidos que a su vez nos direccionan a otras páginas y así sucesivamente; para su creación se emplea lenguaje informático HTML (Hypertext Markup Language), lenguaje de marcas que permite crear documentos para compartir a través de internet; emplea el sistema de Localización Uniforme de Recursos o URL, que es la dirección concreta que determina cada uno de los recursos que se encuentran en la red, es decir, es un identificador propio para cada página, documento, archivo, entre otros, que se encuentran en la web.
 
-Fuente: [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web)
+[World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web)
 
 ## Modelo cliente-servidor
 
@@ -20,7 +20,7 @@ Algunos ejemplos de aplicaciones que usen el modelo cliente-servidor son el Corr
 
 La mayoría de los servicios de Internet son del tipo cliente-servidor. La acción de visitar un sitio web requiere una arquitectura cliente-servidor, ya que el servidor web sirve las páginas web al navegador (al cliente). La computadora y el navegador web del usuario serían considerados un cliente; y las computadoras, las bases de datos, y los usos que componen Wikipedia serían considerados el servidor. Cuando el navegador web del usuario solicita un artículo particular de Wikipedia, el servidor de Wikipedia recopila toda la información a mostrar en la base de datos de Wikipedia, la articula en una página web, y la envía de nuevo al navegador web del cliente.
 
-Fuente: [Cliente-Servidor](https://es.wikipedia.org/wiki/Cliente-servidor)
+[Cliente-Servidor](https://es.wikipedia.org/wiki/Cliente-servidor)
 
 ## URL
 
@@ -53,13 +53,13 @@ Algunos ejemplos de esquemas URL:
 - **telnet** - el protocolo Telnet.
 - **data** - el esquema para insertar pequeños trozos de contenido en los documentos esquema de URI de datos
 
-Fuente: [Localizador de Recursos Uniforme](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme)
+[Localizador de Recursos Uniforme](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme)
 
 ## Servidor web
 
 Un **servidor web** o **servidor HTTP** es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del cliente. El código recibido por el cliente es renderizado por un navegador web. Para la transmisión de todos estos datos suele utilizarse algún protocolo. Generalmente se usa el protocolo HTTP para estas comunicaciones, perteneciente a la capa de aplicación del modelo OSI. El término también se emplea para referirse al ordenador donde se ejecutan esas tareas.
 
-Fuente: [Servidor web](https://es.wikipedia.org/wiki/Servidor_web)
+[Servidor web](https://es.wikipedia.org/wiki/Servidor_web)
 
 ## Frontend
 
@@ -83,4 +83,4 @@ Dentro del área de front-end se trabaja con lenguajes mayormente del lado del c
 HTML y CSS son lenguajes de marcado y estilo. Javascript es un lenguaje de programación.
 :::
 
-Fuente: [Servnet.mx](https://www.servnet.mx/blog/backend-y-frontend-partes-fundamentales-de-la-programaci%C3%B3n-de-una-aplicaci%C3%B3n-web)
+[Servnet.mx](https://www.servnet.mx/blog/backend-y-frontend-partes-fundamentales-de-la-programaci%C3%B3n-de-una-aplicaci%C3%B3n-web)
