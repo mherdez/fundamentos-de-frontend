@@ -1,5 +1,8 @@
 # Html
 
+- [w3schools](https://www.w3schools.com/html/default.asp)
+- [mdn web docs\_](https://developer.mozilla.org/es/docs/Web/HTML)
+
 ## Introducción
 
 HTML es el lenguaje de marcado estándar para crear páginas web.
@@ -20,13 +23,13 @@ HTML es el lenguaje de marcado estándar para crear páginas web.
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Page Title</title>
-	</head>
-	<body>
-		<h1>My First Heading</h1>
-		<p>My first paragraph.</p>
-	</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -63,14 +66,14 @@ La parte visible del documento HTML está entre **`<body>`** y **`</body>`**.
 ```html
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Mi primera página web</title>
-	</head>
+  <head>
+    <title>Mi primera página web</title>
+  </head>
 
-	<body>
-		<h1>Mi primer encabezado</h1>
-		<p>Mi primer párrafo</p>
-	</body>
+  <body>
+    <h1>Mi primer encabezado</h1>
+    <p>Mi primer párrafo</p>
+  </body>
 </html>
 ```
 
@@ -121,8 +124,8 @@ El **`<p>`** elemento HTML define un párrafo.
 Etiqueta HTML sin ningún significado específico. Se usa conjuntamente con los atributos “class” o “id” para atribuirle ciertas características.
 
 ```html
-Por definición span no debe tener ningún estilo predefinido.
-Estos dos párrafos deben verse igual:
+Por definición span no debe tener ningún estilo predefinido. Estos dos párrafos
+deben verse igual:
 
 <p>Esto es un párrafo, bla, bla, bla.</p>
 <p>Esto es un párrafo, <span>bla, bla, bla.</span></p>
@@ -192,9 +195,7 @@ Los elementos de formato se diseñaron para mostrar tipos especiales de texto:
 <p><i>This text is italic</i></p>
 <p><em>This text is emphasized</em></p>
 <small>This is some smaller text.</small>
-<p>
-	This is<sub> subscript</sub> and <sup>superscript</sup>
-</p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
 ```
 
@@ -210,9 +211,9 @@ Los elementos de la lista se marcarán con viñetas (pequeños círculos negros)
 
 ```html
 <ul>
-	<li>Coffee</li>
-	<li>Tea</li>
-	<li>Milk</li>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
 </ul>
 ```
 
@@ -224,9 +225,9 @@ Los elementos de la lista se marcarán con números de forma predeterminada:
 
 ```html
 <ol>
-	<li>Coffee</li>
-	<li>Tea</li>
-	<li>Milk</li>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
 </ol>
 ```
 
@@ -238,10 +239,10 @@ La **`<dl>`** etiqueta define la lista de descripción, la **`<dt>`** etiqueta d
 
 ```html
 <dl>
-	<dt>Coffee</dt>
-	<dd>- black hot drink</dd>
-	<dt>Milk</dt>
-	<dd>- white cold drink</dd>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
 </dl>
 ```
 
@@ -272,9 +273,7 @@ El atributo más importante del elemento **`<a>`** es el atributo **`href`**, qu
 Este ejemplo muestra cómo crear un enlace a W3Schools.com:
 
 ```html
-<a href="https://www.w3schools.com/"
-	>Visit W3Schools.com!</a
->
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
 ```
 
 #### Atributo de destino
@@ -291,9 +290,7 @@ El atributo **`target`** especifica dónde abrir el documento vinculado y puede 
 Se utiliza **`target = "_blank"`** para abrir el documento vinculado en una nueva ventana o pestaña del navegador:
 
 ```html
-<a href="https://www.w3schools.com/" target="_blank"
-	>Visit W3Schools!</a
->
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
 ```
 
 #### Títulos de enlaces
@@ -301,10 +298,8 @@ Se utiliza **`target = "_blank"`** para abrir el documento vinculado en una nuev
 El atributo **`title`** especifica información adicional sobre un elemento. La información se muestra, como un texto informativo a través de un `tooltips`, cuando el mouse se mueve sobre el enlace.
 
 ```html
-<a
-	href="https://www.w3schools.com/html/"
-	title="Go to W3Schools HTML section"
-	>Visit our HTML Tutorial</a
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"
+  >Visit our HTML Tutorial</a
 >
 ```
 
@@ -330,11 +325,7 @@ Para usar una imagen como enlace, simplemente coloque la etiqueta **`<img>`** de
 
 ```html
 <a href="default.asp">
-	<img
-		src="smiley.gif"
-		alt="HTML tutorial"
-		style="width:42px;height:42px;"
-	/>
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;" />
 </a>
 ```
 
@@ -353,9 +344,7 @@ Para usar un botón HTML como enlace, debe agregar un código JavaScript.
 JavaScript le permite especificar qué sucede en ciertos eventos, como hacer clic en un botón
 
 ```html
-<button onclick="document.location='default.asp'">
-	HTML Tutorial
-</button>
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
 ```
 
 :::tip RESUMEN
@@ -408,8 +397,8 @@ Para apuntar a una imagen en otro servidor, debe especificar una URL absoluta (c
 
 ```html
 <img
-	src="https://www.w3schools.com/images/w3schools_green.jpg"
-	alt="W3Schools.com"
+  src="https://www.w3schools.com/images/w3schools_green.jpg"
+  alt="W3Schools.com"
 />
 ```
 
@@ -437,21 +426,21 @@ Cada fila de la tabla comienza con una etiqueta **`<tr>`** y termina con una **`
 
 ```html
 <table>
-	<tr>
-		<th>Company</th>
-		<th>Contact</th>
-		<th>Country</th>
-	</tr>
-	<tr>
-		<td>Alfreds Futterkiste</td>
-		<td>Maria Anders</td>
-		<td>Germany</td>
-	</tr>
-	<tr>
-		<td>Centro comercial Moctezuma</td>
-		<td>Francisco Chang</td>
-		<td>Mexico</td>
-	</tr>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
 </table>
 ```
 
@@ -461,21 +450,21 @@ A veces desea que sus celdas sean encabezados, en esos casos use la etiqueta **`
 
 ```html
 <table>
-	<tr>
-		<th>Person 1</th>
-		<th>Person 2</th>
-		<th>Person 3</th>
-	</tr>
-	<tr>
-		<td>Emil</td>
-		<td>Tobias</td>
-		<td>Linus</td>
-	</tr>
-	<tr>
-		<td>16</td>
-		<td>14</td>
-		<td>10</td>
-	</tr>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
 </table>
 ```
 
