@@ -123,7 +123,7 @@ Los estilos internos se definen dentro del elemento `<style>`, dentro de la secc
 
 Se puede usar un estilo en línea para aplicar un estilo único a un solo elemento.
 
-Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSSy se definen dentro del atributo "style" del elemento relevante:
+Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSS y se definen dentro del atributo `"style"` del elemento relevante:
 
 ```html
 <!DOCTYPE html>

@@ -1,5 +1,8 @@
 # CSS Flexbox
 
+- [w3schools](https://www.w3schools.com/css/css3_flexbox.asp)
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
 El Módulo de Caja Flexible, comúnmente llamado `flexbox`, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación.
 
 ## Contenedor

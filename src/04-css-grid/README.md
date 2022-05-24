@@ -1,5 +1,8 @@
 # CSS Grid
 
+- [w3schools](https://www.w3schools.com/css/css_grid.asp)
+- [CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
 El diseño **`grid`** ofrece un sistema de diseño basado en cuadrículas, con filas y columnas, lo que facilita el diseño de páginas web sin tener que usar _floats_ y _potitions_.
 
 ![css grid](https://cdn-cgbdj.nitrocdn.com/RbczMDpxKIrQLdqnZdHDBvZTsISICJjh/assets/static/optimized/rev-9e9aef5/wp-content/uploads/2019/02/navbar1-1.png)
