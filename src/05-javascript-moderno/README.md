@@ -20,21 +20,23 @@ Ejemplos
 var elvisLives = Math.PI > 4 ? 'Sip' : 'Nop';
 ```
 
+Operador ternario anidado
+
 ```js
 var firstCheck = false,
-  secondCheck = false,
-  access = firstCheck
-    ? 'Acceso Denegado'
-    : secondCheck
-    ? 'Acceso Denegado'
-    : 'Acceso Permitido';
+	secondCheck = false,
+	access = firstCheck
+		? 'Acceso Denegado'
+		: secondCheck
+		? 'Acceso Denegado'
+		: 'Acceso Permitido';
 
 console.log(access); // muestra "Acceso Permitido"
 ```
 
 ## [Asignadores lógicos](https://es.javascript.info/logical-operators)
 
-### OR '||' encuentra el primer valor verdadero
+### Operador OR '||'. Encuentra el primer valor verdadero
 
 Dado múltiples valores aplicados al operador OR:
 
@@ -98,7 +100,7 @@ nombre ||= id;
 // nombre = 'Ana'
 ```
 
-### AND '&&' encuentra el primer valor falso
+### Operador AND '&&'. Encuentra el primer valor falso
 
 Dado múltiples valores aplicados al operador AND:
 
@@ -137,7 +139,9 @@ nombre &&= id;
 let user;
 
 alert(user ?? 'Anonymous'); // Anonymous (user no definido)
+```
 
+```js
 let user = 'John';
 
 alert(user ?? 'Anonymous'); // John (user definido)
@@ -175,7 +179,7 @@ const array1 = [5, 12, 8, 130, 44];
 let index = 2;
 
 console.log(
-  `Using an index of ${index} the item returned is ${array1.at(index)}`
+	`Using an index of ${index} the item returned is ${array1.at(index)}`
 );
 // expected output: "Using an index of 2 the item returned is 8"
 
@@ -273,12 +277,12 @@ Ejemplo
 
 ```js
 const words = [
-  'spray',
-  'limit',
-  'elite',
-  'exuberant',
-  'destruction',
-  'present',
+	'spray',
+	'limit',
+	'elite',
+	'exuberant',
+	'destruction',
+	'present',
 ];
 
 const result = words.filter((word) => word.length > 6);
@@ -419,7 +423,7 @@ Ejemplo
 ```js
 var numbers = [1, 5, 10, 15];
 var doubles = numbers.map(function (x) {
-  return x * 2;
+	return x * 2;
 });
 // doubles is now [2, 10, 20, 30]
 // numbers is still [1, 5, 10, 15]
@@ -474,8 +478,8 @@ const array1 = [1, 2, 3, 4];
 // 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
 const sumWithInitial = array1.reduce(
-  (previousValue, currentValue) => previousValue + currentValue,
-  initialValue
+	(previousValue, currentValue) => previousValue + currentValue,
+	initialValue
 );
 
 console.log(sumWithInitial);
@@ -603,7 +607,7 @@ El metodo sort puede ser usado convenientemente con _function expressions_
 ```js
 var numbers = [4, 2, 5, 1, 3];
 numbers.sort(function (a, b) {
-  return a - b;
+	return a - b;
 });
 console.log(numbers);
 
