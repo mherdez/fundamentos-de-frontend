@@ -91,7 +91,7 @@ Los comentarios son muy útiles y deberías utilizarlos con frecuencia, especial
 // soy un comentario
 ```
 
-- Se escribe un comentario de varias líneas entre las cadenas /_ y _/
+- Se escribe un comentario de varias líneas entre las cadenas /\* y \*/
 
 ```js
 /*
