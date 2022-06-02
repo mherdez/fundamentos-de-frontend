@@ -6,23 +6,93 @@
 
 La interfaz Document representa cualquier página web cargada en el navegador y sirve como punto de entrada al contenido de la página web, que es el árbol DOM (Document Object Model).
 
+## Elementos
+
+### Creación
+
+```js
+document.createElement(tag);
+```
+
+Crea un nuevo nodo elemento con la etiqueta HTML dada:
+
+```js
+let div = document.createElement('div');
+
+document.createTextNode(text);
+```
+
+Crea un nuevo nodo texto con el texto dado:
+
+```js
+let textNode = document.createTextNode('Aquí estoy');
+```
+
+La mayoría de las veces se necesitan crear _nodos de elemento_, como el `div` para el mensaje.
+
+### Creando el mensaje
+
+Crear el div de mensaje toma 3 pasos:
+
+```js
+// 1. Crear elemento <div>
+let div = document.createElement('div');
+
+// 2. Establecer su clase a "alert"
+div.className = 'alert';
+
+// 3. Agregar el contenido
+div.innerHTML = '<strong>¡Hola!</strong> Usted ha leído un importante mensaje.';
+```
+
+### Inserción
+
+El método `appendChild()` agrega un nodo al final de la lista de hijos de un nodo padre especificado.
+
+```js
+node.appendChild(aChild);
+```
+
+Ejemplo
+
+```js
+// Create a new paragraph element, and append it to the end of the document body
+
+let p = document.createElement('p');
+document.body.appendChild(p);
+```
+
+### Eliminación
+
+```js
+node.remove();
+```
+
+Ejemplo
+
+```html
+<style>
+	.alert {
+		padding: 15px;
+		border: 1px solid #d6e9c6;
+		border-radius: 4px;
+		color: #3c763d;
+		background-color: #dff0d8;
+	}
+</style>
+
+<script>
+	let div = document.createElement('div');
+	div.className = 'alert';
+	div.innerHTML =
+		'<strong>¡Hola!</strong> Usted ha leído un importante mensaje.';
+
+	document.body.append(div);
+	setTimeout(() => div.remove(), 1000);
+</script>
+```
+
 ## Selección
-
-### document.getElementById.
-
-Devuelve una referencia al elemento por su **ID**.
-
-### document.getElementsByClassName().
-
-Retorna un objecto similar a un arreglo de los elementos hijos que tengan todos los **nombres de clase** indicados.
-
-### document.getElementsByName().
-
-Devuelve una colección de lista de nodos con un **name** dado en el documento (X)HTML.
-
-### document.getElementsByTagName.
-
-Devuelve una **lista de elementos** (HTML) con un nombre determinado. Se busca en todo el documento, incluyendo el nodo raíz.
 
 ### document.querySelector()
 
@@ -80,7 +150,7 @@ Aquí hay una lista con los eventos del DOM más utilizados, solo para echar un 
 
 - `transitionend` – cuando una animación CSS concluye.
 
-## Controladores de eventos
+### Controladores de eventos
 
 Para reaccionar con eventos podemos asignar un handler (controlador) el cual es una función que se ejecuta en caso de un evento.
 
@@ -159,7 +229,7 @@ Ejemplo
 </script>
 ```
 
-## Acciones predeterminadas del navegador
+### Acciones predeterminadas del navegador
 
 Muchos eventos conducen automáticamente a determinadas acciones realizadas por el navegador.
 
@@ -184,88 +254,4 @@ En este HTML, un clic en un enlace no conduce a la navegación. El navegador no 
 <a href="/" onclick="return false">Haz clic aquí</a>
 
 <a href="/" onclick="event.preventDefault()">aquí</a>
-```
-
-## Creando un elemento
-
-```js
-document.createElement(tag);
-```
-
-Crea un nuevo nodo elemento con la etiqueta HTML dada:
-
-```js
-let div = document.createElement('div');
-
-document.createTextNode(text);
-```
-
-Crea un nuevo nodo texto con el texto dado:
-
-```js
-let textNode = document.createTextNode('Aquí estoy');
-```
-
-La mayoría de las veces se necesitan crear _nodos de elemento_, como el `div` para el mensaje.
-
-### Creando el mensaje
-
-Crear el div de mensaje toma 3 pasos:
-
-```js
-// 1. Crear elemento <div>
-let div = document.createElement('div');
-
-// 2. Establecer su clase a "alert"
-div.className = 'alert';
-
-// 3. Agregar el contenido
-div.innerHTML = '<strong>¡Hola!</strong> Usted ha leído un importante mensaje.';
-```
-
-## Métodos de inserción
-
-El método `appendChild()` agrega un nodo al final de la lista de hijos de un nodo padre especificado.
-
-```js
-node.appendChild(aChild);
-```
-
-Ejemplo
-
-```js
-// Create a new paragraph element, and append it to the end of the document body
-
-let p = document.createElement('p');
-document.body.appendChild(p);
-```
-
-## Eliminación de nodos
-
-```js
-node.remove();
-```
-
-Ejemplo
-
-```html
-<style>
-	.alert {
-		padding: 15px;
-		border: 1px solid #d6e9c6;
-		border-radius: 4px;
-		color: #3c763d;
-		background-color: #dff0d8;
-	}
-</style>
-
-<script>
-	let div = document.createElement('div');
-	div.className = 'alert';
-	div.innerHTML =
-		'<strong>¡Hola!</strong> Usted ha leído un importante mensaje.';
-
-	document.body.append(div);
-	setTimeout(() => div.remove(), 1000);
-</script>
 ```
