@@ -21,19 +21,19 @@ Se agrega en el `head`, justo antes de tu etiqueta de cierre `</head>`.
 ```html
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<script>
-			alert('1, 2, 3... probando.');
-		</script>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      alert('1, 2, 3... probando.');
+    </script>
+  </head>
 
-	<body>
-		<h1>Fundamentos de JavaScript</h1>
-	</body>
+  <body>
+    <h1>Fundamentos de JavaScript</h1>
+  </body>
 </html>
 ```
 
@@ -73,11 +73,11 @@ Sin embargo, se considera mala práctica y se debe evitar su uso de esta manera.
 <button onclick="createParagraph()">Click me!</button>
 
 <script>
-	function createParagraph() {
-		let para = document.createElement('p');
-		para.textContent = 'You clicked the button!';
-		document.body.appendChild(para);
-	}
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'You clicked the button!';
+    document.body.appendChild(para);
+  }
 </script>
 ```
 
@@ -191,9 +191,9 @@ Utiliza la expresión **`if`** para ejecutar una instrucción si una condición 
 
 ```js
 if (condition) {
-	statement_1;
+  statement_1;
 } else {
-	statement_2;
+  statement_2;
 }
 ```
 
@@ -201,13 +201,13 @@ También puedes componer las declaraciones usando **`else if`** para que se prue
 
 ```js
 if (condition_1) {
-	statement_1;
+  statement_1;
 } else if (condition_2) {
-	statement_2;
+  statement_2;
 } else if (condition_n) {
-	statement_n;
+  statement_n;
 } else {
-	statement_last;
+  statement_last;
 }
 ```
 
@@ -255,7 +255,7 @@ Un ciclo `for` se repite hasta que una condición especificada se evalúe como `
 
 ```js
 for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización]) {
-	instrucción;
+  instrucción;
 }
 ```
 
@@ -265,7 +265,7 @@ La instrucción `do...while` se repite hasta que una condición especificada se 
 
 ```js
 do {
-	expresión;
+  expresión;
 } while (condición);
 ```
 
@@ -275,7 +275,7 @@ Una declaración `while` ejecuta sus instrucciones siempre que una condición es
 
 ```js
 while (condición) {
-	expresión;
+  expresión;
 }
 ```
 
@@ -293,7 +293,7 @@ Una definición de función (también denominada declaración de función o expr
 
 ```js
 function cuadrado(numero) {
-	return numero * numero;
+  return numero * numero;
 }
 ```
 
@@ -313,7 +313,7 @@ Funciones simple:
 
 ```js
 function saludar() {
-	console.log('Hola Mundo');
+  console.log('Hola Mundo');
 }
 
 saludar();
@@ -323,7 +323,7 @@ Funciones con argumentos/parámetros:
 
 ```js
 function saludar(nombre) {
-	console.log('Saludos ' + nombre);
+  console.log('Saludos ' + nombre);
 }
 
 saludar('Juan');
@@ -333,7 +333,7 @@ Funciones con valor de retorno:
 
 ```js
 function saludar(nombre) {
-	return 'Saludos ' + nombre;
+  return 'Saludos ' + nombre;
 }
 
 console.log(saludar('Juan'));
@@ -353,18 +353,18 @@ Sintácticamente un objeto en JavaScript es un conjunto agrupado entre llaves de
 
 ```js
 let nombreDelObjeto = {
-	clave_1: valor_1,
-	clave_2: valor_2,
-	clave_3: valor_3,
-	clave_n: valor_n,
+  clave_1: valor_1,
+  clave_2: valor_2,
+  clave_3: valor_3,
+  clave_n: valor_n,
 };
 ```
 
 ```js
 let myCar = {
-	make: 'Ford',
-	model: 'Mustang',
-	year: 1969,
+  make: 'Ford',
+  model: 'Mustang',
+  year: 1969,
 };
 ```
 
@@ -374,10 +374,10 @@ Se denomina objeto literal al objeto cuyas propiedades están declaradas textual
 
 ```js
 let perro = {
-	nombre: 'Hércules', //string
-	color: 'Negro', //string
-	edad: 2, //number
-	macho: true, //bolean
+  nombre: 'Hércules', //string
+  color: 'Negro', //string
+  edad: 2, //number
+  macho: true, //bolean
 };
 ```
 
@@ -391,10 +391,10 @@ Consiste en escribir el nombre del objeto seguido de un punto y el nombre de la 
 
 ```js
 let perro = {
-	nombre: 'Hércules', //string
-	color: 'Negro', //string
-	edad: 2, //number
-	macho: true, //bolean
+  nombre: 'Hércules', //string
+  color: 'Negro', //string
+  edad: 2, //number
+  macho: true, //bolean
 };
 console.info(perro.nombre); // Hércules
 console.info(perro.edad); // 2
@@ -406,10 +406,10 @@ Consiste en escribir el nombre del objeto anteponiendo entre corchetes la clave 
 
 ```js
 let perro = {
-	nombre: 'Hércules', //string
-	color: 'Negro', //string
-	edad: 2, //number
-	macho: true, //bolean
+  nombre: 'Hércules', //string
+  color: 'Negro', //string
+  edad: 2, //number
+  macho: true, //bolean
 };
 
 console.info(perro['nombre']); // Hércules
@@ -426,13 +426,13 @@ Un objeto no solo se limita a la agrupación de claves valores, es posible tambi
 
 ```js
 let perro = {
-	nombre: 'Hércules',
-	color: 'Negro',
-	edad: 2,
-	macho: true,
-	ladrar: function () {
-		return `${this.nombre} puede ladrar`;
-	},
+  nombre: 'Hércules',
+  color: 'Negro',
+  edad: 2,
+  macho: true,
+  ladrar: function () {
+    return `${this.nombre} puede ladrar`;
+  },
 };
 
 console.log(perro.ladrar()); // Hércules puede ladrar
@@ -470,22 +470,22 @@ delete perro.peso;
 
 ```js
 let perro = {
-	nombre: 'Hércules',
-	color: 'Negro',
-	edad: 2,
-	macho: true,
-	alimentos: {
-		desayuno: 'carne',
-		comida: ['croquetas', 'vitaminas', 'proteinas'],
-		cena: {
-			entrada: 'granos',
-			fuerte: 'proteina',
-			final: 'líquidos',
-		},
-	},
-	ladrar: function () {
-		return `${this.nombre} puede ladrar`;
-	},
+  nombre: 'Hércules',
+  color: 'Negro',
+  edad: 2,
+  macho: true,
+  alimentos: {
+    desayuno: 'carne',
+    comida: ['croquetas', 'vitaminas', 'proteinas'],
+    cena: {
+      entrada: 'granos',
+      fuerte: 'proteina',
+      final: 'líquidos',
+    },
+  },
+  ladrar: function () {
+    return `${this.nombre} puede ladrar`;
+  },
 };
 ```
 
@@ -514,13 +514,23 @@ La propiedad `length` de un objeto que es una instancia de tipo Array establece 
 
 ### Métodos iterables
 
+### Declaración for
+
+```js
+const array = ['a', 'b', 'c', 'd', 'e'];
+
+for (let i = 0; i < array.length; i++) {
+  instrucción;
+}
+```
+
 ### Declaración for...in
 
 La instrucción `for...in` itera una variable especificada sobre todas las propiedades enumerables de un objeto. Para cada propiedad distinta, JavaScript ejecuta las instrucciones especificadas.
 
 ```js
 for (variable in objeto) {
-	instrucción;
+  instrucción;
 }
 ```
 
@@ -530,7 +540,7 @@ La declaración `for...of` crea un bucle que se repite sobre objetos iterables (
 
 ```js
 for (variable of objeto) {
-	expresión;
+  expresión;
 }
 ```
 
