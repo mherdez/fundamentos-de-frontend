@@ -6,7 +6,7 @@
 
 La interfaz Document representa cualquier página web cargada en el navegador y sirve como punto de entrada al contenido de la página web, que es el árbol DOM (Document Object Model).
 
-## getElementBy...
+## Selección
 
 ### document.getElementById.
 
@@ -24,7 +24,7 @@ Devuelve una colección de lista de nodos con un **name** dado en el documento (
 
 Devuelve una **lista de elementos** (HTML) con un nombre determinado. Se busca en todo el documento, incluyendo el nodo raíz.
 
-## document.querySelector()
+### document.querySelector()
 
 Devuelve el primer elemento del documento que coincide con el grupo especificado de selectores.
 
@@ -39,7 +39,7 @@ element = document.querySelector(selectores);
 - Selector de id
 - Selector de atributos
 
-## document.querySelectorAll()
+### document.querySelectorAll()
 
 Devuelve una lista de los elementos del documento que coinciden con el grupo especificado de selectores.
 
