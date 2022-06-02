@@ -14,7 +14,9 @@ La interfaz Document representa cualquier página web cargada en el navegador y 
 document.createElement(tag);
 ```
 
-Crea un nuevo nodo elemento con la etiqueta HTML dada:
+Crea un nuevo nodo elemento con la etiqueta HTML dada.
+
+Ejemplo
 
 ```js
 let div = document.createElement('div');
@@ -160,13 +162,13 @@ Los handlers son una forma de ejecutar código JavaScript en caso de acciones po
 
 Un handler puede ser establecido en el HTML con un atributo llamado `on<event>`.
 
-Por ejemplo, para asignar un handler click para un input podemos usar onclick, como aquí:
+Por ejemplo, para asignar un handler _click_ para un `input` podemos usar `onclick`, como aquí:
 
 ```html
 <input value="Click me" onclick="alert('Click!')" type="button" />
 ```
 
-Al hacer click, el código dentro de onclick se ejecuta.
+Al hacer click, el código dentro de `onclick` se ejecuta.
 
 ### Propiedad del DOM
 
@@ -183,13 +185,13 @@ Por ejemplo, **elem.onclick**:
 </script>
 ```
 
-### addEventListener
+### addEventListener()
 
 El problema fundamental de las formas ya mencionadas para asignar handlers es que no podemos asignar multiples handlers a un solo evento.
 
 Digamos que una parte de nuestro código quiere resaltar un botón al hacer click, y otra quiere mostrar un mensaje en el mismo click.
 
-Nos gustaría asignar dos handlers de eventos para eso. Pero una nueva propiedad DOM sobrescribirá la que ya existe:
+Asignar dos handlers de eventos iguales, la segunda sobrescribirá la que ya existe:
 
 ```js
 input.onclick = function () {
@@ -245,8 +247,8 @@ Si manejamos un evento en JavaScript, es posible que no queramos que suceda la a
 
 Hay dos formas de decirle al navegador que no queremos que actúe:
 
-_ La forma principal es utilizar el objeto event. Hay un método `event.preventDefault()`.
-_ Si el controlador se asigna usando `on<event>` (no por addEventListener), entonces devolver false también funciona igual.
+- La forma principal es utilizar el objeto event. Hay un método `event.preventDefault()`.
+- Si el controlador se asigna usando `on<event>` (no por `addEventListener`), entonces devolver `false` también funciona igual.
 
 En este HTML, un clic en un enlace no conduce a la navegación. El navegador no hace nada:
 

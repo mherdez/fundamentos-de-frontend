@@ -23,13 +23,13 @@ HTML es el lenguaje de marcado estándar para crear páginas web.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </body>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+		<h1>My First Heading</h1>
+		<p>My first paragraph.</p>
+	</body>
 </html>
 ```
 
@@ -66,14 +66,14 @@ La parte visible del documento HTML está entre **`<body>`** y **`</body>`**.
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mi primera página web</title>
-  </head>
+	<head>
+		<title>Mi primera página web</title>
+	</head>
 
-  <body>
-    <h1>Mi primer encabezado</h1>
-    <p>Mi primer párrafo</p>
-  </body>
+	<body>
+		<h1>Mi primer encabezado</h1>
+		<p>Mi primer párrafo</p>
+	</body>
 </html>
 ```
 
@@ -211,13 +211,13 @@ Los elementos de la lista se marcarán con viñetas (pequeños círculos negros)
 
 ```html
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
 </ul>
 ```
 
-### Lista HTML ordenada
+### Lista ordenada
 
 Una lista ordenada comienza con la **`<ol>`** etiqueta. Cada elemento de la lista comienza con la **`<li>`** etiqueta.
 
@@ -225,9 +225,9 @@ Los elementos de la lista se marcarán con números de forma predeterminada:
 
 ```html
 <ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Milk</li>
 </ol>
 ```
 
@@ -239,10 +239,10 @@ La **`<dl>`** etiqueta define la lista de descripción, la **`<dt>`** etiqueta d
 
 ```html
 <dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
+	<dt>Coffee</dt>
+	<dd>- black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>- white cold drink</dd>
 </dl>
 ```
 
@@ -299,7 +299,7 @@ El atributo **`title`** especifica información adicional sobre un elemento. La 
 
 ```html
 <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"
-  >Visit our HTML Tutorial</a
+	>Visit our HTML Tutorial</a
 >
 ```
 
@@ -325,7 +325,7 @@ Para usar una imagen como enlace, simplemente coloque la etiqueta **`<img>`** de
 
 ```html
 <a href="default.asp">
-  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;" />
+	<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;" />
 </a>
 ```
 
@@ -397,8 +397,8 @@ Para apuntar a una imagen en otro servidor, debe especificar una URL absoluta (c
 
 ```html
 <img
-  src="https://www.w3schools.com/images/w3schools_green.jpg"
-  alt="W3Schools.com"
+	src="https://www.w3schools.com/images/w3schools_green.jpg"
+	alt="W3Schools.com"
 />
 ```
 
@@ -426,21 +426,21 @@ Cada fila de la tabla comienza con una etiqueta **`<tr>`** y termina con una **`
 
 ```html
 <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
+	<tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Country</th>
+	</tr>
+	<tr>
+		<td>Alfreds Futterkiste</td>
+		<td>Maria Anders</td>
+		<td>Germany</td>
+	</tr>
+	<tr>
+		<td>Centro comercial Moctezuma</td>
+		<td>Francisco Chang</td>
+		<td>Mexico</td>
+	</tr>
 </table>
 ```
 
@@ -450,21 +450,21 @@ A veces desea que sus celdas sean encabezados, en esos casos use la etiqueta **`
 
 ```html
 <table>
-  <tr>
-    <th>Person 1</th>
-    <th>Person 2</th>
-    <th>Person 3</th>
-  </tr>
-  <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td>14</td>
-    <td>10</td>
-  </tr>
+	<tr>
+		<th>Person 1</th>
+		<th>Person 2</th>
+		<th>Person 3</th>
+	</tr>
+	<tr>
+		<td>Emil</td>
+		<td>Tobias</td>
+		<td>Linus</td>
+	</tr>
+	<tr>
+		<td>16</td>
+		<td>14</td>
+		<td>10</td>
+	</tr>
 </table>
 ```
 
