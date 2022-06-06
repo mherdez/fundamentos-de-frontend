@@ -295,7 +295,7 @@ obj.func?.(args);
 
 ### Descripción
 
-El operador de encadenamiento opcional proporciona una manera de simplificar el acceso a valores a través de objetos conectados cuando es posible que una referencia o función sea undefinedo null.
+El operador de encadenamiento opcional proporciona una manera de simplificar el acceso a valores a través de objetos conectados cuando es posible que una referencia o función sea `undefined` o `null`.
 
 Por ejemplo, considere un objeto objque tiene una estructura anidada. Sin el encadenamiento opcional, buscar una subpropiedad profundamente anidada requiere validar las referencias intermedias, como:
 
@@ -303,7 +303,7 @@ Por ejemplo, considere un objeto objque tiene una estructura anidada. Sin el enc
 let nestedProp = obj.first && obj.first.second;
 ```
 
-Se confirma que el valor de obj.firstes no null(y no undefined) antes de acceder al valor de obj.first.second. Esto evita el error que ocurriría si accediera obj.first.seconddirectamente sin probar obj.first.
+Se confirma que el valor de obj.first es no null (y no undefined) antes de acceder al valor de obj.first.second. Esto evita el error que ocurriría si accediera obj.first.second directamente sin probar obj.first.
 
 Sin embargo, con el operador de encadenamiento opcional ( ?.), no tiene que probar y cortocircuitar explícitamente en función del estado obj.firstantes de intentar acceder a obj.first.second:
 
@@ -311,7 +311,7 @@ Sin embargo, con el operador de encadenamiento opcional ( ?.), no tiene que prob
 let nestedProp = obj.first?.second;
 ```
 
-Al usar el ?.operador en lugar de solo ., JavaScript sabe que debe verificar implícitamente para asegurarse de obj.firstque no es nullo undefinedantes de intentar acceder obj.first.second. Si obj.firstes nullo undefined, la expresión se cortocircuita automáticamente y devuelve undefined.
+Al usar el ?.operador en lugar de solo ., JavaScript sabe que debe verificar implícitamente para asegurarse de obj.first que no es nullo undefined antes de intentar acceder obj.first.second. Si obj.first es null o undefined, la expresión se cortocircuita automáticamente y devuelve undefined.
 
 Esto es equivalente a lo siguiente, excepto que la variable temporal de hecho no se crea:
 
