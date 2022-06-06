@@ -344,7 +344,7 @@ Para objetos literales (nuevo en ECMAScript 2018):
 let objClone = { ...obj };
 ```
 
-## [La desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+## [Desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables.
 
