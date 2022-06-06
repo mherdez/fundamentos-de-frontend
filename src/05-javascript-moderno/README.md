@@ -280,7 +280,7 @@ Es usado para asignar valores por defecto a las variables:
 height ??= 100; // height = height ?? 100;
 ```
 
-## Encadenamiento opcional
+## [Encadenamiento opcional](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 
 El operador de encadenamiento opcional `?.` leer el valor de una propiedad ubicada en lo profundo de una cadena de objetos conectados sin tener que verificar que cada referencia en la cadena sea válida.
 
