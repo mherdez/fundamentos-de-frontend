@@ -293,6 +293,24 @@ obj.arr?.[index];
 obj.func?.(args);
 ```
 
+Ejemplo
+
+```js
+const adventurer = {
+	name: 'Alice',
+	cat: {
+		name: 'Dinah',
+	},
+};
+
+const dogName = adventurer.dog?.name;
+console.log(dogName);
+// expected output: undefined
+
+console.log(adventurer.someNonExistentMethod?.());
+// expected output: undefined
+```
+
 ### Descripción
 
 El operador de encadenamiento opcional proporciona una manera de simplificar el acceso a valores a través de objetos conectados cuando es posible que una referencia o función sea `undefined` o `null`.
