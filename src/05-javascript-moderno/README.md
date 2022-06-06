@@ -1,6 +1,21 @@
 # Javascript moderno
 
-## Operador ternario
+## [Plantillas literales](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals)
+
+Las plantillas literales son cadenas literales que habilitan el uso de expresiones incrustadas. Con ellas, es posible utilizar cadenas de caracteres de más de una línea, y funcionalidades de interpolación de cadenas de caracteres.
+
+En ediciones anteriores de la especificación ES2015, solían llamarse "plantillas de cadenas de caracteres".
+
+Sintaxis
+`texto de cadena de caracteres`
+
+`línea 1 de la cadena de caracteres línea 2 de la cadena de caracteres`
+
+`texto de cadena de caracteres ${expresión} texto adicional`
+
+etiqueta`texto de cadena de caracteres ${expresión} texto adicional`
+
+## [Operador ternario](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 El operador condicional (ternario) es el único operador en JavaScript que tiene tres operandos. Este operador se usa con frecuencia como atajo para la instrucción **`if`**.
 
@@ -34,9 +49,113 @@ var firstCheck = false,
 console.log(access); // muestra "Acceso Permitido"
 ```
 
+## Parámetros predeterminados
+
+Parámetros predeterminados de función permiten que los parámetros con nombre se inicien con valores predeterminados si no se pasa ningún valor o undefined.
+
+Sintaxis
+
+```js
+function [name]([param1[ = defaultValue1 ][, ..., paramN[ = defaultValueN ]]]) {
+   statements
+}
+```
+
+Ejemplo
+
+```js
+function multiply(a, b = 1) {
+	return a * b;
+}
+
+console.log(multiply(5, 2));
+// expected output: 10
+
+console.log(multiply(5));
+// expected output: 5
+```
+
+## Función de Flecha
+
+Es una alternativa compacta a una expresión de función tradicional.
+
+```js
+// Función Tradicional
+function name() {
+	...
+	return val
+}
+
+// Función de Flecha
+const name = () => val
+```
+
+### Sintaxis
+
+**Sintaxis básica**
+
+Un parámetro. Con una expresión simple no se necesita return:
+
+```js
+(param) => expression;
+```
+
+Varios parámetros requieren paréntesis. Con una expresión simple no se necesita return:
+
+```js
+(param1, paramN) => expression;
+```
+
+Las declaraciones de varias líneas requieren corchetes y return:
+
+```js
+(param) => {
+	let a = 1;
+	return a + b;
+};
+```
+
+Varios parámetros requieren paréntesis. Las declaraciones de varias líneas requieren corchetes y return:
+
+```js
+(param1, paramN) => {
+	let a = 1;
+	return a + b;
+};
+```
+
+**Sintaxis avanzada**
+
+Para devolver una expresión de objeto literal, se requieren paréntesis alrededor de la expresión:
+
+```js
+(params) => ({ foo: 'a' }); // devuelve el objeto {foo: "a"}
+```
+
+Los parámetros rest son compatibles:
+
+```js
+(a, b, ...r) => expression;
+```
+
+Se admiten los parámetros predeterminados:
+
+```js
+(a = 400, b = 20, c) => expression;
+```
+
+Desestructuración dentro de los parámetros admitidos:
+
+```js
+([a, b] = [10, 20]) => a + b; // el resultado es 30
+({ a, b } = { a: 10, b: 20 }) => a + b; // resultado es 30
+```
+
 ## [Asignadores lógicos](https://es.javascript.info/logical-operators)
 
 ### Operador OR '||'. Encuentra el primer valor verdadero
+
+[Asignación OR lógica (||=)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)
 
 Dado múltiples valores aplicados al operador OR:
 
@@ -102,6 +221,8 @@ nombre ||= id;
 
 ### Operador AND '&&'. Encuentra el primer valor falso
 
+[Asignación lógica AND (&&=)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)
+
 Dado múltiples valores aplicados al operador AND:
 
 ```js
@@ -133,6 +254,8 @@ nombre &&= id;
 
 ### Operador Nullish Coalescing '??'
 
+[Asignación lógica nula (??=)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment)
+
 ?? devuelve el primer argumento cuando este no es null ni undefined. En caso contrario, devuelve el segundo.
 
 ```js
@@ -155,6 +278,98 @@ Es usado para asignar valores por defecto a las variables:
 // Asignar height=100, si height es null o undefined
 
 height ??= 100; // height = height ?? 100;
+```
+
+## Encadenamiento opcional
+
+El operador de encadenamiento opcional `?.` leer el valor de una propiedad ubicada en lo profundo de una cadena de objetos conectados sin tener que verificar que cada referencia en la cadena sea válida.
+
+Sintaxis
+
+```js
+obj.val?.prop;
+obj.val?.[expr];
+obj.arr?.[index];
+obj.func?.(args);
+```
+
+### Descripción
+
+El operador de encadenamiento opcional proporciona una manera de simplificar el acceso a valores a través de objetos conectados cuando es posible que una referencia o función sea undefinedo null.
+
+Por ejemplo, considere un objeto objque tiene una estructura anidada. Sin el encadenamiento opcional, buscar una subpropiedad profundamente anidada requiere validar las referencias intermedias, como:
+
+```js
+let nestedProp = obj.first && obj.first.second;
+```
+
+Se confirma que el valor de obj.firstes no null(y no undefined) antes de acceder al valor de obj.first.second. Esto evita el error que ocurriría si accediera obj.first.seconddirectamente sin probar obj.first.
+
+Sin embargo, con el operador de encadenamiento opcional ( ?.), no tiene que probar y cortocircuitar explícitamente en función del estado obj.firstantes de intentar acceder a obj.first.second:
+
+```js
+let nestedProp = obj.first?.second;
+```
+
+Al usar el ?.operador en lugar de solo ., JavaScript sabe que debe verificar implícitamente para asegurarse de obj.firstque no es nullo undefinedantes de intentar acceder obj.first.second. Si obj.firstes nullo undefined, la expresión se cortocircuita automáticamente y devuelve undefined.
+
+Esto es equivalente a lo siguiente, excepto que la variable temporal de hecho no se crea:
+
+```js
+let temp = obj.first;
+let nestedProp = temp === null || temp === undefined ? undefined : temp.second;
+```
+
+## [Sintaxis Spread](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+La sintaxis extendida o spread syntax permite a un elemento iterable tal como un arreglo o cadena ser expandido en lugares donde cero o más argumentos (para llamadas de función) o elementos (para Array literales) son esperados, o a un objeto ser expandido en lugares donde cero o más pares de valores clave (para literales Tipo Objeto) son esperados.
+
+Sintaxis
+
+Para llamadas de funciones:
+
+```js
+myFunction(...iterableObj);
+```
+
+Para arreglos literales o cadenas de caracteres:
+
+```js
+[...iterableObj, '4', 'five', 6];
+```
+
+Para objetos literales (nuevo en ECMAScript 2018):
+
+```js
+let objClone = { ...obj };
+```
+
+## [La desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+La sintaxis de desestructuración es una expresión de JavaScript que permite desempacar valores de arreglos o propiedades de objetos en distintas variables.
+
+Sintaxis
+
+```js
+let a, b, rest;
+[a, b] = [10, 20];
+console.log(a); // 10
+console.log(b); // 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // [30, 40, 50]
+
+({ a, b } = { a: 10, b: 20 });
+console.log(a); // 10
+console.log(b); // 20
+
+// Propuesta de etapa 4 (terminada)
+({ a, b, ...rest } = { a: 10, b: 20, c: 30, d: 40 });
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // {c: 30, d: 40}
 ```
 
 ## Programación funcional
