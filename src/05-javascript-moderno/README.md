@@ -305,7 +305,7 @@ let nestedProp = obj.first && obj.first.second;
 
 Se confirma que el valor de obj.first es no null (y no undefined) antes de acceder al valor de obj.first.second. Esto evita el error que ocurriría si accediera obj.first.second directamente sin probar obj.first.
 
-Sin embargo, con el operador de encadenamiento opcional ( ?.), no tiene que probar y cortocircuitar explícitamente en función del estado obj.firstantes de intentar acceder a obj.first.second:
+Sin embargo, con el operador de encadenamiento opcional ( ?.), no tiene que probar y cortocircuitar explícitamente en función del estado obj.first antes de intentar acceder a obj.first.second:
 
 ```js
 let nestedProp = obj.first?.second;
