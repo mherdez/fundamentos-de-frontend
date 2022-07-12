@@ -5,7 +5,7 @@
 
 El diseño **`grid`** ofrece un sistema de diseño basado en cuadrículas, con filas y columnas, lo que facilita el diseño de páginas web sin tener que usar _floats_ y _potitions_.
 
-![css grid](https://cdn-cgbdj.nitrocdn.com/RbczMDpxKIrQLdqnZdHDBvZTsISICJjh/assets/static/optimized/rev-9e9aef5/wp-content/uploads/2019/02/navbar1-1.png)
+![css grid](https://i0.wp.com/www.silocreativo.com/wp-content/uploads/2017/04/css-grid.png)
 
 ## Diseño de cuadrícula
 
@@ -183,6 +183,8 @@ Las columnas de cada fila se definen dentro de los apóstrofes, separadas por un
 ```
 
 ### Ejemplo
+
+![grid ejemplo](https://raidboxes.io/wp-content/uploads/2021/07/CSS-Grid-Empty-Space.png)
 
 ```css
 body {
