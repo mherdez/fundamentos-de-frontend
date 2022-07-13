@@ -87,10 +87,14 @@ Para enviar los cambios posteriores a tu repositorio remoto solo ejecuta.
 - [Glitch](https://glitch.com/)
 - [Vercel](https://vercel.com/)
 
-## Gestor de paquetes
+## Gestores de paquetes
 
-- NPM
-  - Node
-  - Jest
-  - Bootstrap
-- Yarn
+Un sistema de gestión de paquetes, también conocido como gestor de paquetes, es una colección de herramientas que sirven para automatizar el proceso de instalación, actualización, configuración y eliminación de paquetes de software.
+
+### [NPM](https://www.npmjs.com/)
+
+NPM es parte esencial de [Node.js](https://nodejs.org/es/), responde a las siglas de Node Package Manager o manejador de paquetes de node, es la herramienta por defecto de JavaScript para la tarea de compartir e instalar paquetes.
+
+### [Yarn](https://yarnpkg.com/)
+
+YARN es un gestor dependencias de JavaScript, que está enfocado en la velocidad y la seguridad, y a diferencia de otros gestores como NPM, YARN es muy rápido y muy fácil de usar. Sin embargo, se necesita también Node.js, porque depende de él, ya que utiliza el registro de NPM por defecto.
