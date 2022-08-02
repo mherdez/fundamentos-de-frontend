@@ -6,6 +6,8 @@ Las plantillas literales o template string, son cadenas literales que habilitan 
 
 En ediciones anteriores de la especificación ES2015, solían llamarse "plantillas de cadenas de caracteres".
 
+Las plantillas literales se delimitan con el caracter de comillas o tildes invertidas (\` \`), en lugar de las comillas sencillas o dobles.
+
 Las plantillas de cadena de caracteres pueden contener marcadores, identificados por el signo de dólar y envueltos en llaves `${expresión}`. Las expresiones contenidas en los marcadores, junto con el texto entre ellas, son enviados como argumentos a una función.
 
 
@@ -18,7 +20,7 @@ Sintaxis
 
 `texto de cadena de caracteres ${expresión} texto adicional`
 
-etiqueta`texto de cadena de caracteres ${expresión} texto adicional`
+tagFuntion`texto de cadena de caracteres ${expresión} texto adicional`
 ~~~
 
 ## [Operador ternario](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
@@ -34,17 +36,17 @@ condición ? expr1 : expr2;
 Ejemplos
 
 ```js
-'La Cuota es de:  ' + (isMember ? '$2.00' : '$10.00');
+'La Cuota es de:  ' + (esMiembro ? '$2.00' : '$10.00');
 ```
 
 ```js
-var elvisLives = Math.PI > 4 ? 'Sip' : 'Nop';
+let valorDePi = Math.PI > 4 ? 'Sip' : 'Nop';
 ```
 
 Operador ternario anidado
 
 ```js
-var firstCheck = false,
+let firstCheck = false,
 	secondCheck = false,
 	access = firstCheck
 		? 'Acceso Denegado'
