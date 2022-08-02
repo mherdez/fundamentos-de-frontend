@@ -2,18 +2,24 @@
 
 ## [Plantillas literales](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals)
 
-Las plantillas literales son cadenas literales que habilitan el uso de expresiones incrustadas. Con ellas, es posible utilizar cadenas de caracteres de más de una línea, y funcionalidades de interpolación de cadenas de caracteres.
+Las plantillas literales o template string, son cadenas literales que habilitan el uso de expresiones incrustadas. Con ellas, es posible utilizar cadenas de caracteres de más de una línea, y funcionalidades de interpolación de cadenas de caracteres.
 
 En ediciones anteriores de la especificación ES2015, solían llamarse "plantillas de cadenas de caracteres".
 
+Las plantillas de cadena de caracteres pueden contener marcadores, identificados por el signo de dólar y envueltos en llaves `${expresión}`. Las expresiones contenidas en los marcadores, junto con el texto entre ellas, son enviados como argumentos a una función.
+
+
 Sintaxis
+~~~js
 `texto de cadena de caracteres`
 
-`línea 1 de la cadena de caracteres línea 2 de la cadena de caracteres`
+`línea 1 de la cadena de caracteres
+ línea 2 de la cadena de caracteres`
 
 `texto de cadena de caracteres ${expresión} texto adicional`
 
 etiqueta`texto de cadena de caracteres ${expresión} texto adicional`
+~~~
 
 ## [Operador ternario](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
