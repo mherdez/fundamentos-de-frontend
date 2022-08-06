@@ -500,6 +500,55 @@ A veces desea que sus celdas sean encabezados, en esos casos use la etiqueta **`
 <small>[Mayor información sobre estas etiquetas](https://www.w3schools.com/html/html_tables.asp)</small>
 :::
 
+## Formulario
+
+Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación. Los formularios permiten a los usuarios ingresar datos, que generalmente se envían a un servidor web para su procesamiento y almacenamiento.
+
+### form
+Define el contenedor para el formulario. Admite algunos atributos específicos para configurar la forma en que se comporta el formulario. Todos sus atributos son opcionales, pero es una práctica estándar establecer siempre al menos los atributos action y method:
+
+```html
+<form action="" method="">
+
+</form>
+```
+
+### input
+Permite que el usuario ingrese datos. Sus atributos son:
+
+- `type` dato que recibirá el input.
+- `placeholder` texto de ayuda para el usuario.
+- `id` identificador único.
+- `name` nombre del input, nos sire para asociar información al dato ingresado por ejemplo: **curso = "texto proporcionado por el usuario"**
+
+```html
+<input id="curso" type="text" placeholder="Ingrese un curso" name="curso">
+```
+
+### label
+Texto adicional que describe al input es por esto que cuenta con el atributo for donde ingresamos el id del input.
+
+```html
+<label for="curso">Curso: </label>
+```
+
+### button
+Es un botón para procesar nuestro formulario es por esto que cuenta con el atributo submit
+
+```html
+<button type="submit">Enviar</button>
+```
+
+### Formulario completo
+
+```html
+<form action="recibir.html" method="GET">
+    <label for="curso">Curso: </label>
+    <input id="curso" type="text" placeholder="Ingrese un curso" name="curso">
+    <button type="submit">Enviar</button>
+</form>
+```
+
 ## HTML semántico
 
 Es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia).
