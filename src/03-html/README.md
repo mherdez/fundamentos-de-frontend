@@ -414,6 +414,22 @@ Estos son los tipos de archivos de imagen más comunes, que son compatibles con 
 | PNG | Portable Network Graphics | .png|
 | SVG | Scalable Vector Graphics | .svg|
 
+## Divisiones
+
+Sirve para crear secciones o agrupar contenidos.
+
+Sus etiquetas son: `<div>` y `</div>` (ambas obligatorias).
+
+~~~html
+<div style="color: blue;">
+ <h2> Ejemplo de div y span </h2>
+  <p>
+    Esto es un párrafo dentro de un div,
+    <span style="color: red;"> y esto un span dentro de un párrafo.</span>
+  </p>
+</div>
+~~~
+
 ## Tablas
 
 Las tablas permiten a los desarrolladores web organizar los datos en filas y columnas.
