@@ -1,4 +1,4 @@
-# Referencias
+# Influencers
 
 - [Carlos Azaustre](https://www.youtube.com/c/CarlosAzaustre)
 - [Fernando Herrera](https://www.youtube.com/c/FernandoHerreraCr)
