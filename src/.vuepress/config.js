@@ -56,6 +56,11 @@ module.exports = {
 				text: 'Markdown',
 				link: 'https://markdown.es/',
 			},
+			{
+				text: 'FreeCodeCamp',
+				link: 'https://www.freecodecamp.org/espanol/',
+			},
+
 		],
 		sidebar: [
 			'/',
