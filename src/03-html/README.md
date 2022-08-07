@@ -81,12 +81,6 @@ La parte visible del documento HTML está entre **`<body>`** y **`</body>`**.
 En general, todo elemento puede ser anidado, convertirse en un contenedor o ser contenido por otros elementos. Los elementos exclusivamente estructurales como **`<html>`**, **`<head>`** y **`<body>`** tienen un lugar específico en un documento HTML, pero el resto son flexibles.
 :::
 
-## DOM
-
-Document Object Model o DOM ('Modelo de Objetos del Documento' o 'Modelo en Objetos para la Representación de Documentos') es esencialmente una interfaz de plataforma que proporciona un conjunto estándar de objetos para representar documentos HTML, XHTML y XML,​ un modelo estándar sobre cómo pueden combinarse dichos objetos, y una interfaz estándar para acceder a ellos y manipularlos. A través del DOM, los programas pueden acceder y modificar el contenido, estructura y estilo de los documentos HTML y XML, que es para lo que se diseñó principalmente.
-
-![Modelo de Objetos del Documento](https://media.geeksforgeeks.org/wp-content/uploads/20210908120846/DOM.png)
-
 ## Textos y formatos
 
 ### Encabezados
@@ -556,3 +550,9 @@ Es el uso de las etiquetas HTML para reforzar la semántica, o el significado, d
 HTML5 establece una serie de nuevos elementos y atributos que reflejan el uso típico de los sitios web modernos. Algunos de ellos son técnicamente similares a las etiquetas **`<div>`** y **`<span>`**, pero tienen un significado semántico, como por ejemplo **`<nav>`** (bloque de navegación del sitio web) y **`<footer>`**.
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--veFFaidK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/58cn5xtdd1qe9mvtji3k.png)
+
+## DOM
+
+Document Object Model o DOM ('Modelo de Objetos del Documento' o 'Modelo en Objetos para la Representación de Documentos') es esencialmente una interfaz de plataforma que proporciona un conjunto estándar de objetos para representar documentos HTML, XHTML y XML,​ un modelo estándar sobre cómo pueden combinarse dichos objetos, y una interfaz estándar para acceder a ellos y manipularlos. A través del DOM, los programas pueden acceder y modificar el contenido, estructura y estilo de los documentos HTML y XML, que es para lo que se diseñó principalmente.
+
+![Modelo de Objetos del Documento](https://media.geeksforgeeks.org/wp-content/uploads/20210908120846/DOM.png)
