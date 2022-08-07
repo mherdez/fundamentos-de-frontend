@@ -543,11 +543,32 @@ Es un botón para procesar nuestro formulario es por esto que cuenta con el atri
 </form>
 ```
 
-## [HTML semántico](https://dev.to/sapardo/etiquetas-semanticas-de-html5-3j7m)
+## HTML semántico
 
 Es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia).
 
 HTML5 establece una serie de nuevos elementos y atributos que reflejan el uso típico de los sitios web modernos. Algunos de ellos son técnicamente similares a las etiquetas **`<div>`** y **`<span>`**, pero tienen un significado semántico, como por ejemplo **`<nav>`** (bloque de navegación del sitio web) y **`<footer>`**.
+
+
+:::tip Etiquetas Semánticas
+|Tag| Description|
+|-|-|
+|**`<header>`**| Representa un grupo de ayudas introductorias o de navegación.
+También puede contener logos, formulario de búsqueda o tabla de contenidos|
+|**`<nav>`** | Sección de una página que enlaza a otras páginas o partes de la misma.
+Una sección con links de navegación.|
+|**`<aside>`** | Sección de una pagina que contiene contenido relacionado tangencialmente al de su alrededor.
+Por lo general se utilizan como barras laterales.|
+|**`<main>`** | Representa el contenido predominante de la página.
+Una página debe tener solo un tag `<main>`.
+Solo debe estar contenida por tags de tipo `<html>`, `<body>`, `<div>` o `<form>`.|
+|**`<article>`**| Representa una sección de contenido que puede ser distribuido de forma independiente.
+Puede ser un post en un foro, un articulo de periódico, una entrada de un blog, un comentario, etc.|
+|**`<section>`** | Representa a una sección genérica de una pagina. Agrupa contenidos que tienen una relación temática entre si.|
+|**`<footer>`**| Representa un pie de página para el elemento que lo contiene.
+Generalmente contiene información acerca de quién lo escribió, enlaces a documentos relacionados, datos de derechos de autor o similares.|
+<small>[Mayor información sobre estas etiquetas](https://dev.to/sapardo/etiquetas-semanticas-de-html5-3j7m)</small>
+:::
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--veFFaidK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/58cn5xtdd1qe9mvtji3k.png)
 
