@@ -543,7 +543,7 @@ Es un botón para procesar nuestro formulario es por esto que cuenta con el atri
 </form>
 ```
 
-## HTML semántico
+## [HTML semántico](https://dev.to/sapardo/etiquetas-semanticas-de-html5-3j7m)
 
 Es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la información en las páginas web más que simplemente redefinir su forma de presentación (apariencia).
 
