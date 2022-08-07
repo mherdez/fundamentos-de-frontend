@@ -350,6 +350,19 @@ JavaScript le permite especificar qué sucede en ciertos eventos, como hacer cli
 - Utilice el esquema **`mailto:`** dentro del atributo **`href`** para crear un enlace que abra el programa de correo electrónico del usuario.
   :::
 
+
+:::warning Menú y anclas
+~~~html
+<details>
+	<summary>Menu</summary>
+	<li><a href="#Chrome">Chrome</a></li>
+	<li><a href="#Safari">Safari</a></li>
+	<li><a href="#FireFox">FireFox</a></li>
+	<li><a href="#Opera">Opera</a></li>
+</details>
+~~~
+:::
+
 ## Imágenes
 
 Las imágenes pueden mejorar el diseño y la apariencia de una página web.
