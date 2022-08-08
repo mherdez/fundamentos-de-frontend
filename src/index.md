@@ -1,6 +1,6 @@
 # Introducción
 
-Este material tiene como objetivo entregar los fundamentos y herramientas necesarias para iniciarse en el desarrollo web con HMTL, CSS y Javascript.
+Este material tiene como objetivo entregar los fundamentos y herramientas necesarias para iniciarse en el desarrollo web con HTML, CSS y Javascript.
 
 Está estructurado de forma tal que se pueda llevar el seguimiento paso a paso y realizar una serie de ejercicios para reafirmar los conceptos teóricos.
 
